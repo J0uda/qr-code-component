@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    font-family: "Outfit";
+    background: var(--light-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+.qrCodeImage {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 1.2em;
+}
+
+.qr-code-info {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    padding: 0.2em;
+    text-align: center;
+}
+
+.qr-code-info h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.qr-code-info p {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
